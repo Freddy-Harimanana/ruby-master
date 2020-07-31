@@ -1,17 +1,28 @@
-def add (a, b)
- x = a + b
-puts x 
+def add (a,b)
+  x = a + b
+  return x 
 end
-add(0,0)  
-add(2,2)
-add(2,6)
-add(2,2)
-
 def subtract(a,b)
-x = a - b
-puts x
+  x = a - b
+  return x
 end
-subtract(10,4)
+def sum(a)
+x = a.reduce(:+).to_f + 0
+  return x
+end
+def multiply(a,b)
+  x = a * b
+  return x
+end
+def power(a, b)
+  x = a ** b
+  return x
+end
+def factorial(a)
+  x = (1..a).reduce(:*) || 1
+  return x
+end
+
 
 
 
